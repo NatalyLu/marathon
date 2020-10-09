@@ -4,30 +4,93 @@
     <meta charset="utf-8">
     <title>Blog</title>
     <link href="css/style.css" type="text/css" rel="stylesheet"/>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <a class="nav__logo">
-          <img src="img/logo.png" width="116" height="100" alt="Логотип Аадемии">
-          <span>Академия</span>
-          <span>Центр подготовки к ЕГЭ/ОГЭ</span>
+    <header class="header">
+      <nav class="header__nav">
+        <a class="header__logo">
+          <img src="img/logo.png" width="130" height="83" alt="Логотип">
         </a>
-        <div class="nav__contacts">
-          <div>
-            Нижний Новгород,<br>ул. Героя Смирнова, д.2
-          </div>
-          <div>
-            +7(930)712-20-21<br>+7(987)752-55-68
-          </div>
-        </div>
+        <ul class="header__list">
+          <li><a href="#article">Статьи</a></li>
+          <li><a href="#aboutMe">Обо мне</a></li>
+          <li><a href="portfolio">Портфолио</a></li>
+          <li><a href="writeMe">Написать мне</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <section class="training-effort">
-        
+      <section class="articles">
+        <div class="articles__select">
+          <select>
+            <option>Выбрать тему</option>
+            <option>Пункт 2</option>
+          </select>
+        </div>
+        <div class="articles__wrapper">
+          <h2 class="main-title articles__title">Все статьи</h2>
+          <ul class="articles__list">
+            <li>
+              <img src="img/articles/article-1.jpg" width="130" height="268" alt="Берлин">
+              <span class="article__title">Путешествие в Берлин в августе </span>
+              <span class="article__text">Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</span>
+              <div class="article__info">
+                <span>Теги: <span>путешествия</span></span>
+                <span>29.09.2020</span>
+              </div>
+            </li>
+            <li>
+              <img src="img/articles/article-2.jpg" width="130" height="268" alt="Коктейли">
+              <span class="article__title">Где выпить колдбрю в Москве</span>
+              <span class="article__text">
+                Собрала для вас список любимых кофеен, где подают лучший летний напиток.
+              </span>
+              <div class="article__info">
+                <span>Теги: <span>город</span></span>
+                <span>24.07.2020</span>
+              </div>
+            </li>
+            <li>
+              <img src="img/articles/article-3.jpg" width="130" height="268" alt="Книги">
+              <span class="article__title">Прочитано: книжные рекомендации</span>
+              <span class="article__text">
+                Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.
+              </span>
+              <div class="article__info">
+                <span>Теги: <span>книги</span></span>
+                <span>15.07.2020</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="articles__popular">
+            <li>
+              <img src="img/articles/acticle-mine-1.jpg" width="590" height="52" alt="Цветы">
+              <span class="popular_title">Снимки на плёнку</span>
+              <span class="popular__text">
+                Поделилась с вами весенними фотографиями, и секретами удачных снимков.
+              </span>
+              <div class="popular__info">
+                <span>Теги: <span>фотографии</span></span>
+                <span>29.06.2020</span>
+              </div>
+            </li>
+            <li>
+              <img src="img/articles/acticle-mine-2.jpg" width="590" height="52" alt="Чизкейк">
+              <span class="popular_title">Домашний чизкейк</span>
+              <span class="popular__text">
+                Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!
+              </span>
+              <div class="popular__info">
+                <span>Теги: <span>рецепты</span></span>
+                <span>24.06.2020</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="button articles__button">Показать ещё</button>
       </section>
     </main>
 

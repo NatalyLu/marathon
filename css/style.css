@@ -7,6 +7,17 @@ body {
   margin: 0;
 }
 
+
+/* BUTTON */
+.button {
+  background: none;
+  border: 1px solid #202117;
+  border-radius: 10px;
+  padding: 12px 57px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
 .header {
   background: no-repeat center url(/img/header-background.jpg);
   background-size: cover;
@@ -40,8 +51,144 @@ body {
   color: #2E2F22;
 }
 
+/* TITLE */
+.main-title {
+  margin: 0;
+  font-family: 'Spectral SC', serif;
+  font-size: 36px;
+}
+
 /* ARTICLES */
 .articles {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 85px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.articles__select {
+  position: absolute;
+  right: 0;
+  width: 203px;
+}
+
+.articles__select::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 20px;
+  right: 20px;
+  top: calc(50% - 10px);
+  background: url('/img/select-arrow.svg') no-repeat center right;
+}
+
+.articles__select select{
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: #D7D1C9;
+  border-radius: 10px;
+  appearance: none;
+  width: 100%;
+  padding: 12px 21px;
+}
+
+.articles__wrapper {
+  margin-bottom: 104px;
+}
+
+.articles__title {
+  margin-bottom: 50px;
+}
+
+.articles__list {
+  margin: 0;
+  margin-bottom: 62px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles__list li {
+  width: 387px;
+  display: flex;
+  flex-direction: column;
+}
+
+.articles__list img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 27px;
+}
+
+.article__title {
+  font-family: 'Spectral SC', serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.article__text {
+  line-height: 26px;
+  margin-bottom: 12px;
+}
+
+.article__info {
+  display: flex;
+  justify-content: space-between;
+  opacity: .7;
+}
+
+.articles__popular {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.articles__popular li {
+  padding: 60px 80px;
+  max-width: 590px;
+  min-height: 552px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.articles__popular img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.popular_title {
+  font-family: 'Spectral SC', serif;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.popular__text {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+
+.popular__info {
+  display: flex;
+  justify-content: space-between;
+  opacity: .7;
+}
+
+.articles__button {
+  align-self: center;
 }

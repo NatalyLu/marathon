@@ -12,14 +12,20 @@ body {
 .button {
   background: none;
   border: 1px solid #202117;
+  color: #202117;
   border-radius: 10px;
   padding: 12px 57px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
+/* LINK */
+.text-link {
+  color: #2E2F22;
+}
+
 .header {
-  background: no-repeat center url(/img/header-background.jpg);
+  background: no-repeat top center url(/img/header-background.jpg);
   background-size: cover;
   min-height: 581px;
   font-size: 16px;
@@ -65,6 +71,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  color: #2E2F22;
 }
 
 .articles__select {
@@ -89,6 +96,7 @@ body {
   font-size: 16px;
   border: none;
   background-color: #D7D1C9;
+  color: #2E2F22;
   border-radius: 10px;
   appearance: none;
   width: 100%;
@@ -151,7 +159,7 @@ body {
 }
 
 .articles__popular li {
-  padding: 60px 80px;
+  padding: 65px 80px;
   max-width: 590px;
   min-height: 552px;
   position: relative;
@@ -191,4 +199,51 @@ body {
 
 .articles__button {
   align-self: center;
+}
+
+/* ABOUT */
+.about {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-bottom: 88px;
+  color: #2E2F22;
+}
+
+.aboutMe__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__wrapper img {
+  width: 590px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.about article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about__text {
+  padding-left: 20px;
+  line-height: 26px;
+  margin: 42px 70px 42px 0;
+}
+
+.about__motivation {
+  font-size: 30px;
+  line-height: 40px;
+  font-style: italic;
+  padding: 20px 0 20px 20px;
+  margin: 0;
+  border-left: 3px solid #D7D1C9;
 }

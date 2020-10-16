@@ -10,7 +10,7 @@ body {
 
 /* BUTTON */
 .button {
-  background: none;
+  background: transparent;
   border: 1px solid #202117;
   color: #202117;
   border-radius: 10px;
@@ -204,7 +204,6 @@ body {
 /* ABOUT */
 .about {
   max-width: 1200px;
-  padding: 0 10px;
   margin: 0 auto;
   margin-bottom: 88px;
   color: #2E2F22;
@@ -324,5 +323,76 @@ body {
 }
 
 .portfolio__button {
+  align-self: center;
+}
+
+/* FORM */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-section__title {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 996px;
+  margin: 0 auto;
+  padding: 50px 80px 60px 80px;
+  color: #202117;
+  box-sizing: border-box;
+  background: no-repeat url(/img/write-background.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.form__user-data-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form__message {
+  margin-bottom: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field__box {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #202117;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+input.field__box {
+  width: 407px;
+}
+
+textarea.field__box {
+  min-height: 293px;
+  resize: none;
+}
+
+.field__title {
+  font-family: 'Spectral SC', serif;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #2E2F22;
+}
+
+.form__button {
   align-self: center;
 }

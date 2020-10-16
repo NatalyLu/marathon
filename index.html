@@ -16,8 +16,8 @@
         <ul class="header__list">
           <li><a href="#article">Статьи</a></li>
           <li><a href="#aboutMe">Обо мне</a></li>
-          <li><a href="portfolio">Портфолио</a></li>
-          <li><a href="writeMe">Написать мне</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#writeMe">Написать мне</a></li>
         </ul>
       </nav>
     </header>
@@ -114,7 +114,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <h2 class="main-title portfolio__title">Портфолио</h2>
         <ul class="portfolio__list">
           <li>
@@ -146,6 +146,27 @@
           </li>
         </ul>
         <button class="button portfolio__button">Показать ещё</button>
+      </section>
+
+      <section class="form-section" id="writeMe">
+        <h2 class="main-title form-section__title">Напиши мне</h2>
+        <form class="form" action="#" id="form-message" method="POST">
+          <div class="form__user-data-wrap">
+            <div class="field">
+              <label for="name" class="field__title">Ваше имя</label>
+              <input id="name" class="field__box" type="text" name="name" placeholder="Иван Иванов" required>
+            </div>
+            <div class="field">
+              <label for="email" class="field__title">Email</label>
+              <input id="email" class="field__box" type="email" name="email" placeholder="google@gmail.com" required>
+            </div>
+          </div>
+          <div class="form__message field">
+            <label for="message" class="field__title">Сообщение</label>
+            <textarea id="message" class="field__box" name="message" rows="11" cols="5" placeholder="Напишите здесь ваше сообщение." required></textarea>
+          </div>
+          <button type="submit" class="button form__button">ОТПРАВИТЬ</button>
+        </form>
       </section>
     </main>
 

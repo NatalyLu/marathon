@@ -7,6 +7,19 @@ body {
   margin: 0;
 }
 
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 /* BUTTON */
 .button {
@@ -17,6 +30,7 @@ body {
   padding: 12px 57px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  cursor: pointer;
 }
 
 /* LINK */
@@ -120,13 +134,19 @@ body {
   justify-content: space-between;
 }
 
-.articles__list li {
+.article:hover {
+  opacity: .7;
+}
+
+.article a {
   width: 387px;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: #2E2F22;
 }
 
-.articles__list img {
+.article img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 27px;
@@ -155,10 +175,13 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  color: #fff;
 }
 
-.articles__popular li {
+.popular:hover {
+  opacity: .7;
+}
+
+.popular a {
   padding: 65px 80px;
   max-width: 590px;
   min-height: 552px;
@@ -167,9 +190,11 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
 }
 
-.articles__popular img {
+.popular img {
   position: absolute;
   top: 0;
   left: 0;
@@ -179,7 +204,7 @@ body {
   border-radius: 10px;
 }
 
-.popular_title {
+.popular__title {
   font-family: 'Spectral SC', serif;
   font-size: 20px;
   margin-bottom: 8px;
@@ -271,37 +296,54 @@ body {
   justify-content: space-between;
 }
 
-.portfolio__list li {
-  min-height: 525px;
+.portfolio-item {
   border-radius: 10px;
-  width: 387px;
 }
-.portfolio__list li div {
+
+.portfolio-item:hover {
+  opacity: .7;
+}
+
+.portfolio-item a {
+  display: flex;
+  justify-content: center;
+  min-height: 525px;
+  width: 387px;
+  text-decoration: none;
+  color: #2E2F22;
+}
+
+.portfolio-item div {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 140px auto 0 auto;
+  padding-top: 140px;
 }
 
-.portfolio__list li:first-child {
+.portfolio-item:first-child {
   background: no-repeat url(/img/portfolio-1.jpg);
 }
-.portfolio__list li:first-child div {
+.portfolio-item:first-child div {
   max-width: 285px;
 }
 
-.portfolio__list li:nth-child(2) {
+.portfolio-item:nth-child(2) {
   background: no-repeat url(/img/portfolio-2.jpg);
   color: #fff;
 }
-.portfolio__list li:nth-child(2) div {
+
+.portfolio-item:nth-child(2) a {
+  color: #fff;
+}
+
+.portfolio-item:nth-child(2) div {
   max-width: 340px;
 }
 
-.portfolio__list li:nth-child(3) {
+.portfolio-item:nth-child(3) {
   background: no-repeat url(/img/portfolio-3.jpg);
 }
-.portfolio__list li:nth-child(3) div {
+.portfolio-item:nth-child(3) div {
   max-width: 355px;
 }
 
@@ -343,7 +385,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 996px;
-  margin: 0 auto;
+  margin: 0 auto 84px auto;
   padding: 50px 80px 60px 80px;
   color: #202117;
   box-sizing: border-box;
@@ -395,4 +437,29 @@ textarea.field__box {
 
 .form__button {
   align-self: center;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #D7D1C9;
+  padding: 65px 0 90px 0;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 631px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__social li:hover {
+  opacity: .7;
+}
+
+.social__button {
+  color: #2E2F22;
+  font-size: 18px;
+  text-decoration: none;
 }

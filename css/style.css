@@ -7,19 +7,39 @@ body {
   margin: 0;
 }
 
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 /* BUTTON */
 .button {
-  background: none;
+  background: transparent;
   border: 1px solid #202117;
+  color: #202117;
   border-radius: 10px;
   padding: 12px 57px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  cursor: pointer;
+}
+
+/* LINK */
+.text-link {
+  color: #2E2F22;
 }
 
 .header {
-  background: no-repeat center url(/img/header-background.jpg);
+  background: no-repeat top center url(/img/header-background.jpg);
   background-size: cover;
   min-height: 581px;
   font-size: 16px;
@@ -65,6 +85,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  color: #2E2F22;
 }
 
 .articles__select {
@@ -89,6 +110,7 @@ body {
   font-size: 16px;
   border: none;
   background-color: #D7D1C9;
+  color: #2E2F22;
   border-radius: 10px;
   appearance: none;
   width: 100%;
@@ -112,13 +134,19 @@ body {
   justify-content: space-between;
 }
 
-.articles__list li {
+.article:hover {
+  opacity: .7;
+}
+
+.article a {
   width: 387px;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: #2E2F22;
 }
 
-.articles__list img {
+.article img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 27px;
@@ -147,11 +175,14 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  color: #fff;
 }
 
-.articles__popular li {
-  padding: 60px 80px;
+.popular:hover {
+  opacity: .7;
+}
+
+.popular a {
+  padding: 65px 80px;
   max-width: 590px;
   min-height: 552px;
   position: relative;
@@ -159,9 +190,11 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
 }
 
-.articles__popular img {
+.popular img {
   position: absolute;
   top: 0;
   left: 0;
@@ -171,7 +204,7 @@ body {
   border-radius: 10px;
 }
 
-.popular_title {
+.popular__title {
   font-family: 'Spectral SC', serif;
   font-size: 20px;
   margin-bottom: 8px;
@@ -191,4 +224,242 @@ body {
 
 .articles__button {
   align-self: center;
+}
+
+/* ABOUT */
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 88px;
+  color: #2E2F22;
+}
+
+.aboutMe__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__wrapper img {
+  width: 590px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.about article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about__text {
+  padding-left: 20px;
+  line-height: 26px;
+  margin: 42px 70px 42px 0;
+}
+
+.about__motivation {
+  font-size: 30px;
+  line-height: 40px;
+  font-style: italic;
+  padding: 20px 0 20px 20px;
+  margin: 0;
+  border-left: 3px solid #D7D1C9;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 87px;
+  color: #2E2F22;
+}
+
+.portfolio__title {
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.portfolio__list {
+  margin: 0;
+  margin-bottom: 104px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+  border-radius: 10px;
+}
+
+.portfolio-item:hover {
+  opacity: .7;
+}
+
+.portfolio-item a {
+  display: flex;
+  justify-content: center;
+  min-height: 525px;
+  width: 387px;
+  text-decoration: none;
+  color: #2E2F22;
+}
+
+.portfolio-item div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 140px;
+}
+
+.portfolio-item:first-child {
+  background: no-repeat url(/img/portfolio-1.jpg);
+}
+.portfolio-item:first-child div {
+  max-width: 285px;
+}
+
+.portfolio-item:nth-child(2) {
+  background: no-repeat url(/img/portfolio-2.jpg);
+  color: #fff;
+}
+
+.portfolio-item:nth-child(2) a {
+  color: #fff;
+}
+
+.portfolio-item:nth-child(2) div {
+  max-width: 340px;
+}
+
+.portfolio-item:nth-child(3) {
+  background: no-repeat url(/img/portfolio-3.jpg);
+}
+.portfolio-item:nth-child(3) div {
+  max-width: 355px;
+}
+
+.portfolio-item__article-name {
+  font-family: 'Spectral SC', serif;
+  font-size: 20px;
+  margin-bottom: 44px;
+}
+
+.portfolio-item__title {
+  font-family: 'Spectral SC', serif;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.portfolio-item__text {
+  margin: 0;
+  line-height: 26px;
+}
+
+.portfolio__button {
+  align-self: center;
+}
+
+/* FORM */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-section__title {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 996px;
+  margin: 0 auto 84px auto;
+  padding: 50px 80px 60px 80px;
+  color: #202117;
+  box-sizing: border-box;
+  background: no-repeat url(/img/write-background.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.form__user-data-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form__message {
+  margin-bottom: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field__box {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #202117;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+input.field__box {
+  width: 407px;
+}
+
+textarea.field__box {
+  min-height: 293px;
+  resize: none;
+}
+
+.field__title {
+  font-family: 'Spectral SC', serif;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #2E2F22;
+}
+
+.form__button {
+  align-self: center;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #D7D1C9;
+  padding: 65px 0 90px 0;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 631px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__social li:hover {
+  opacity: .7;
+}
+
+.social__button {
+  color: #2E2F22;
+  font-size: 18px;
+  text-decoration: none;
 }

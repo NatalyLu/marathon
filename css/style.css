@@ -39,7 +39,7 @@ body {
 }
 
 .header {
-  background: no-repeat top center url(/img/header-background.jpg);
+  background: no-repeat top center url('../img/header-background.jpg');
   background-size: cover;
   min-height: 581px;
   font-size: 16px;
@@ -101,7 +101,7 @@ body {
   height: 20px;
   right: 20px;
   top: calc(50% - 10px);
-  background: url('/img/select-arrow.svg') no-repeat center right;
+  background: url('../img/select-arrow.svg') no-repeat center right;
 }
 
 .articles__select select{
@@ -321,14 +321,14 @@ body {
 }
 
 .portfolio-item:first-child {
-  background: no-repeat url(/img/portfolio-1.jpg);
+  background: no-repeat url('../img/portfolio-1.jpg');
 }
 .portfolio-item:first-child div {
   max-width: 285px;
 }
 
 .portfolio-item:nth-child(2) {
-  background: no-repeat url(/img/portfolio-2.jpg);
+  background: no-repeat url('../img/portfolio-2.jpg');
   color: #fff;
 }
 
@@ -341,7 +341,7 @@ body {
 }
 
 .portfolio-item:nth-child(3) {
-  background: no-repeat url(/img/portfolio-3.jpg);
+  background: no-repeat url('../img/portfolio-3.jpg');
 }
 .portfolio-item:nth-child(3) div {
   max-width: 355px;
@@ -389,7 +389,7 @@ body {
   padding: 50px 80px 60px 80px;
   color: #202117;
   box-sizing: border-box;
-  background: no-repeat url(/img/write-background.jpg);
+  background: no-repeat url('../img/write-background.jpg');
   background-size: cover;
   border-radius: 10px;
 }
